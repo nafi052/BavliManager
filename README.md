@@ -2,7 +2,7 @@
 
 [![Build and Test](https://github.com/nafi052/BavliManager/actions/workflows/build.yml/badge.svg)](https://github.com/nafi052/BavliManager/actions/workflows/build.yml)
 
-Created by **Nefi Shvinger** — Java application for managing and studying Talmud Bavli (Babylonian Talmud).
+Created by **Nafi Shvinger** — Java application for managing and studying Talmud Bavli (Babylonian Talmud).
 
 **Tech stack:** Java 11, Maven, Swing (GUI), single-package structure.
 

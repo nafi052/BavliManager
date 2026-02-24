@@ -24,5 +24,9 @@ pom.releaseBackup
 
 # bavli.txt is committed to the repo (do not add here)
 
+# Local data – not committed to repo
+pages/
+user_notes/
+
 # Optional: JARs in lib (uncomment if you don't commit them)
 # lib/*.jar
