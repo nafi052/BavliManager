@@ -78,7 +78,7 @@ SwitchCase.displayMenu(); // Display user menu
 This project is licensed under the MIT License.
 
 ## סקירה כללית
-BavliManager הוא פרויקט מבוסס Java שנועד לנהל ולתקשר עם התלמוד הבבלי.
+פרויקט BavliManager הוא פרויקט מבוסס Java שנועד לנהל ולתקשר עם התלמוד הבבלי.
 הוא מספק כלים מקיפים לניהול אינדקסים, חיפוש, הצגה ולימוד של תוכן מהתלמוד, כמו גם ניהול הערות אישיות וייצוא תוכן.
 
 ## תכונות
