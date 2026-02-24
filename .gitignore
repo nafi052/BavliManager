@@ -1,0 +1,28 @@
+# Compiled class files
+*.class
+bin/
+out/
+
+# IDE (keep .vscode/ for shared project settings)
+.idea/
+*.iml
+*.code-workspace
+.project
+.classpath
+.settings/
+
+# Maven
+target/
+pom.xml.tag
+pom.releaseBackup
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+*~
+
+# bavli.txt is committed to the repo (do not add here)
+
+# Optional: JARs in lib (uncomment if you don't commit them)
+# lib/*.jar

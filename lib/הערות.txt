@@ -1,0 +1,41 @@
+יום שני ז' אייר תשפ"ה
+הוספת קובץ רידמי לצורך תיעוד והסברת הפרויקט.
+הוספת הצגת מספר התוצאות שנמצאו בבחירה 3 - חפש ציטוט.
+
+
+
+:הערות
+getAllMasechtot & getDafsForMasechet & masechetExists & dafExists funcs - work only after loadIndex func actitved
+buildMishnaIndex || getDafsWithMishna || extractMishnayotFromText || getMishnayotOfPerek צריכות טיפול!!
+
+
+
+
+.exists()
+.listFiles()
+.isDirectory()
+
+.readLine()
+.trim()
+.split()
+
+.add()
+
+.getName()
+.keySet()
+.size()
+
+
+
+HashMap - List Map
+HashMap - Map Map
+
+
+
+
+if (!line.contains("פרק")) { // בדיקה שהמילה "פרק" מופיעה בשורה
+                        System.out.println("שגיאה: שורת מסכת לא תקינה, חסרה המילה 'פרק': " + line);
+                        continue; // דלג על השורה הזו
+                    }
+
+                                            System.out.println(page.isEmpty() ? "לא נמצא הדף." : page);
