@@ -30,3 +30,7 @@ user_notes/
 
 # Optional: JARs in lib (uncomment if you don't commit them)
 # lib/*.jar
+
+# OS files
+.DS_Store
+Thumbs.db

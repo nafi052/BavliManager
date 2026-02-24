@@ -55,9 +55,9 @@ public class Tests {
         assertTrue("בדיקת קיום מסכתות בתיקיית pages", 
                 masechtot != null && masechtot.length > 0);
         
-        String pageContent = FileManager.loadPage("ברכות", 2, 'א'); // בדיקת טעינת דף קיים
-        assertTrue("בדיקת טעינת דף קיים - ברכות ב א", 
-                pageContent != null && !pageContent.isEmpty());
+        String pageContent = loadAnyExistingPage(); // בדיקת טעינת דף קיים בפועל במבנה הנתונים
+        assertTrue("בדיקת טעינת דף קיים", 
+            pageContent != null && !pageContent.isEmpty());
         
         pageContent = FileManager.loadPage("מסכת_לא_קיימת", 999, 'א');  // בדיקת טעינת דף לא קיים
         assertTrue("בדיקת טעינת דף לא קיים", 
@@ -222,6 +222,42 @@ public class Tests {
         // בדיקת assert לדוגמה עם לא-null
         obj = new Object();
         assertNotNull("בדיקת ערך לא null", obj);
+    }
+
+    private static String loadAnyExistingPage() {
+        File pagesDir = new File("pages");
+        File[] masechtot = pagesDir.listFiles(File::isDirectory);
+        if (masechtot == null) {
+            return "";
+        }
+
+        for (File masechetDir : masechtot) {
+            File[] dafDirs = masechetDir.listFiles(File::isDirectory);
+            if (dafDirs == null) {
+                continue;
+            }
+
+            for (File dafDir : dafDirs) {
+                int daf;
+                try {
+                    daf = Integer.parseInt(dafDir.getName());
+                } catch (NumberFormatException e) {
+                    continue;
+                }
+
+                String alef = FileManager.loadPage(masechetDir.getName(), daf, 'א');
+                if (alef != null && !alef.isEmpty()) {
+                    return alef;
+                }
+
+                String bet = FileManager.loadPage(masechetDir.getName(), daf, 'ב');
+                if (bet != null && !bet.isEmpty()) {
+                    return bet;
+                }
+            }
+        }
+
+        return "";
     }
     
     /* שיטות עזר לטסטים */
