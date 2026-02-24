@@ -5,7 +5,7 @@
 
 **BavliManager** is a Java application for indexing, searching, and studying Talmud Bavli content, including personal notes and export tools.
 
-**תחזית קצרה:** זהו כלי Java לניהול תוכן תלמודי, חיפוש, הערות אישיות וייצוא.
+**מנהל בבלי:** זהו כלי Java לניהול תוכן תלמודי, חיפוש, הערות אישיות וייצוא.
 
 ## Quick Start (EN)
 

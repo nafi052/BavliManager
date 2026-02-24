@@ -29,6 +29,7 @@
     <!-- Optional PDF dependency: add itext-2.1.7.jar to lib/ and uncomment in README -->
     <build>
         <sourceDirectory>src</sourceDirectory>
+        <testSourceDirectory>src/test/java</testSourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -36,6 +37,7 @@
                 <version>3.11.0</version>
                 <configuration>
                     <release>${maven.compiler.release}</release>
+                    <testRelease>${maven.compiler.release}</testRelease>
                     <encoding>UTF-8</encoding>
                     <includes>
                         <include>bavli/**/*.java</include>
