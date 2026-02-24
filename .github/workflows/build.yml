@@ -19,5 +19,10 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Create minimal test data
+        run: |
+          mkdir -p pages/ברכות/2
+          printf 'משנה\nתוכן דף בדיקה לפרויקט BavliManager.\n' > pages/ברכות/2/alef.txt
+
       - name: Build and verify
         run: mvn -B compile verify
