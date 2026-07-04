@@ -71,5 +71,9 @@ mvn compile exec:java -Dexec.mainClass="bavli.Main"
 - Security policy: see [SECURITY.md](SECURITY.md)
 - Change log: see [CHANGELOG.md](CHANGELOG.md)
 
+## More From Me
+- Portfolio: [nafi-shvinger.com](https://nafi-shvinger.com)
+- [World Cup 2026 Simulator](https://nafi-shvinger.com/Simulators/Mondial/) - free simulator and predictor: group stage, knockout bracket and Monte Carlo odds for all 48 teams
+
 ## License
 MIT — see [LICENSE](LICENSE).
